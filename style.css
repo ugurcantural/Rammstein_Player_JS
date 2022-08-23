@@ -1,0 +1,140 @@
+body {
+    background-image: url(img/background.jpg);
+    /* sayfayı ortalama body üzerinden */
+    /* div ortalama aşağıda var, body ya da div sana kalmış*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#controls i {
+    font-size: 50px;
+    margin: 10px;
+    color: yellow;
+}
+#controls #prev,
+#controls #next {
+    font-size: 30px;
+}
+
+.container {
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    background-color: black;
+    /* background: linear-gradient(110deg, #000000 60%, #ff0000 60%); */
+    /* background-image: linear-gradient(to right, black, red, orange, black, red, orange); */
+
+    /* div ortalama */
+    /* margin: auto; */
+    /*divi ekranda ortalama*/
+    /* position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+#music-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+
+    border-color: yellow;
+    border-style: dashed;
+}
+/*
+#progress {
+    margin-bottom: 20px;
+}
+*/
+#progress .times {
+    margin-left: 10px;
+    margin-right: 10px;
+    /*flex kullanarak zamanı bir sağa bir de sola alma*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#volumecontrols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+#volumecontrols i {
+    margin: 10px;
+    color: yellow;
+}
+
+#progress-bar {
+    width: 98%;
+    accent-color: yellow;
+}
+
+.title {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.singer {
+    text-align: center;
+    color: white;
+}
+
+.times {
+    color: white;
+}
+
+#volume-bar {
+    accent-color: yellow;
+}
+
+#music-list {
+    background-color: black;
+}
+
+ul {
+    padding: 0;
+    margin: 10px;
+}
+
+li {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid yellow;
+    padding: 5px;
+    font-family: cursive;
+    
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+li.playing {
+    background-color: yellow;
+    color: black;
+}
+
+.span-border {
+    border: 1px solid yellow;
+    padding: 2px;
+}
